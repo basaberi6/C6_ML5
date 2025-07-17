@@ -33,10 +33,8 @@ This project aims to **predict a customer's spending** based on their age, annua
 
 ## ✅ Tasks
 
-### Data Wrangling & EDA
+### Ideas for what we want to do with Project
 - [x] Load & clean raw data
-- [x] Visualize distributions
-- [x] Correlation analysis
 
 ### Model Training
 - [x] Baseline logistic regression
