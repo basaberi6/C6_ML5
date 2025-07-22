@@ -11,7 +11,7 @@
 
 ## 📦 Project Overview
 
-This project aims to **predict a customer's spending** based on their age, annual income, region, and loyalty score. By leveraging machine learning algorithms, we aim to identify key churn factors and help businesses retain customers.
+This project aims to **predict the sales performance of a global superstore** based on  factors such as order date, shipping mode, customer segment, and product categories. By leveraging machine learning algorithms, we aim to identify key churn factors and help stores more accuractly predict future sales.
 
 **Key objectives:**
 - Data preprocessing and EDA 🔍
@@ -34,7 +34,11 @@ This project aims to **predict a customer's spending** based on their age, annua
 ## ✅ Tasks
 
 ### Ideas for what we want to do with Project
-- [x] Load & clean raw data
+- [X] Load Data set as .csv
+- [ ] For Wednesday discuss roadblock in data analysis - @All
+- [ ] For Thursday we compare model and methods used - @All 
+- [ ] Exploritory Data Analysis - @Divita
+- [ ] Clean raw data - @ Tala & Divita
 
 ### Model Training
 - [x] Baseline logistic regression
@@ -42,18 +46,15 @@ This project aims to **predict a customer's spending** based on their age, annua
 - [x] Compare performance metrics
 
 ### Final Output
-- [x] Select best model
-- [x] Plot feature importance
-- [x] Save model with `joblib`
-- [ ] 🎉 Deploy model with Streamlit *(optional bonus)*
+- [ ] Review Model Results
 
 ---
 
 ## 📊 Results Snapshot
 
 ```text
-Model: RandomForestClassifier
-Accuracy: 87.5%
-Precision: 0.83
-Recall: 0.79
-F1 Score: 0.81
+Model: 
+Accuracy: 
+Precision: 
+Recall: 
+F1 Score: 
