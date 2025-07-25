@@ -1,4 +1,4 @@
-# 🧠 Final Project: Predicting Customer Purchase Behaviours with Machine Learning
+# 🧠 Final Project: Predicting Sales of Superstore based on Factors
 
 ![Python](https://img.shields.io/badge/python-3.10-blue?logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green)
