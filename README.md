@@ -9,52 +9,53 @@
 
 ---
 
-## 📦 Project Overview
+# Sales Profit Prediction
 
-This project aims to **predict the sales performance of a global superstore** based on  factors such as order date, shipping mode, customer segment, and product categories. By leveraging machine learning algorithms, we aim to identify key churn factors and help stores more accuractly predict future sales.
-
-**Key objectives:**
-- Data preprocessing and EDA 🔍
-- Train/test multiple models 🧪
-- Evaluate with accuracy, precision, recall 📈
-- Deploy the best model ✅
-
----
+## Table of Contents
+- [🛠️ Tech Stack](#️-tech-stack)
+- [Project Objectives](#project-objectives)
+- [Data Preparation & Feature Engineering](#data-preparation--feature-engineering)
+- [Modeling Approach](#modeling-approach)
+- [Best Model](#best-model)
+- [📊 Best Model Results Snapshot](#📊-best-model-results-snapshot)
+- [Business Value](#business-value)
+- [Key Takeaways](#key-takeaways)
 
 ## 🛠️ Tech Stack
+- 🐍 Python 3.12  
+- 📊 Pandas, NumPy, Matplotlib  
+- 🤖 Scikit‑learn, XGBoost, LightGBM, RandomForestRegressor  
+- 📂 Jupyter Notebook  
 
-- 🐍 Python 3.10
-- 📊 Pandas, NumPy, Matplotlib, Seaborn
-- 🤖 Scikit-learn, XGBoost, LightGBM
-- 📂 Jupyter Notebook
-- 🌐 Streamlit (for optional demo)
+## Project Objectives
+- Predict each sale’s profit so the team can make smarter decisions on pricing, promotions, and stock levels.
 
----
+## Data Preparation & Feature Engineering
+- Smoothed out seasonal swings with sine/cosine date transforms  
+- Tamed large values by applying log and square transforms to quantities  
+- Created business‑centric metrics such as profit per unit, discount‑to‑quantity ratios, and customer/category averages to capture buying habits  
 
-## ✅ Tasks
+## Modeling Approach
+- **Linear Regression & Ridge Regression**: Established baseline performance  
+- **Random Forest & Gradient Boosting**: Captured non‑linear interactions  
 
-### Ideas for what we want to do with Project
-- [X] Load Data set as .csv
-- [ ] For Wednesday discuss roadblock in data analysis - @All
-- [ ] For Thursday we compare model and methods used - @All 
-- [ ] Exploritory Data Analysis - @Divita
-- [ ] Clean raw data - @ Tala & Divita
+## Best Model
+- **Random Forest** delivered the highest hold‑out R², explaining roughly 78% of the variability in sales.  
+- While the SMAPE score shows there’s still room to improve absolute error, the model provides clear directional insight into how sales respond to key predictors.  
 
-### Model Training
-- [x] Baseline logistic regression
-- [x] Train Random Forest & tune hyperparameters
-- [x] Compare performance metrics
+## 📊 Best Model Results Snapshot
+```Best Model
+Model: Random Forest
+Test RMSE: 269.58
+Test R^2: 78.26%
+Test Adjusted R^2: 77.96%
+Test SMAPE: 31.66%
 
-### Final Output
-- [ ] Review Model Results
+Team members:
 
----
-
-## 📊 Results Snapshot
-
-```text
-Model: 
-Accuracy: 
-Precision: 
-Recall: 
-F1 Score: 
+Babak S.
+Divita Narang
+Foram Patel
+Murad Ahmed
+Nastaran Adeli
+Tala Amiri
