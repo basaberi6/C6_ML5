@@ -1,60 +1,92 @@
-# 🧠 Final Project: Predicting Customer Purchase Behaviours with Machine Learning
+# 📊 Superstore Sales Prediction Project
 
-![Python](https://img.shields.io/badge/python-3.10-blue?logo=python)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-Final--Submission-success)
-![ML Model](https://img.shields.io/badge/model-RandomForest-orange)
+## 🚀 Project Overview
 
-> “Machines are learning — and so are we.” 💻📊
+This project builds a machine learning regression model to predict sales performance for a global Superstore using historical order and product data. The goal is to uncover patterns and insights that help guide decision-making for sales strategy and operational planning.
 
 ---
 
-## 📦 Project Overview
+## 🔁 Workflow Summary
 
-This project aims to **predict the sales performance of a global superstore** based on  factors such as order date, shipping mode, customer segment, and product categories. By leveraging machine learning algorithms, we aim to identify key churn factors and help stores more accuractly predict future sales.
+1. **Data Cleaning**
+   - Loaded dataset from: `Data/Raw/Sample_Superstore.csv`
+   - Checked for and removed missing or inconsistent data
 
-**Key objectives:**
-- Data preprocessing and EDA 🔍
-- Train/test multiple models 🧪
-- Evaluate with accuracy, precision, recall 📈
-- Deploy the best model ✅
+2. **Feature Engineering**
+   - Converted date columns
+   - Extracted date-based features (year, month, day)
+   - Calculated shipping delay
+   - One-hot encoded categorical variables
 
----
+3. **Model Training**
+   - Trained and compared:
+     - Linear Regression
+     - Random Forest Regressor
+   - Evaluated with R², RMSE, MAE
 
-## 🛠️ Tech Stack
+4. **Model Evaluation**
+   - Visualized residuals, actual vs predicted, and Q-Q plots
+   - Exported top model errors for review
 
-- 🐍 Python 3.10
-- 📊 Pandas, NumPy, Matplotlib, Seaborn
-- 🤖 Scikit-learn, XGBoost, LightGBM
-- 📂 Jupyter Notebook
-- 🌐 Streamlit (for optional demo)
-
----
-
-## ✅ Tasks
-
-### Ideas for what we want to do with Project
-- [X] Load Data set as .csv
-- [ ] For Wednesday discuss roadblock in data analysis - @All
-- [ ] For Thursday we compare model and methods used - @All 
-- [ ] Exploritory Data Analysis - @Divita
-- [ ] Clean raw data - @ Tala & Divita
-
-### Model Training
-- [x] Baseline logistic regression
-- [x] Train Random Forest & tune hyperparameters
-- [x] Compare performance metrics
-
-### Final Output
-- [ ] Review Model Results
+5. **Hyperparameter Tuning**
+   - Applied `GridSearchCV` to fine-tune Random Forest
+   - Best model saved to: `Models/Artifacts/random_forest_tuned.pkl`
 
 ---
 
-## 📊 Results Snapshot
+## 📊 Results Summary
 
-```text
-Model: 
-Accuracy: 
-Precision: 
-Recall: 
-F1 Score: 
+| Model             | R² Score | RMSE     | MAE     |
+|------------------|----------|----------|---------|
+| Linear Regression | 0.038    | 753.649  | 199.070 |
+| Random Forest     | 0.591    | 491.690  | 85.937  |
+| Tuned RF (CV)     | ~0.62    | ~Lower   | ~Lower  |
+
+✅ Random Forest significantly outperforms Linear Regression.
+
+---
+
+## 📁 Repository Structure
+
+```
+C6_ML5/
+├── Data/
+│   ├── Raw/
+│   │   └── Sample_Superstore.csv
+│   └── Processed/
+│       └── feature_engineered_superstore.csv
+├── Models/
+│   ├── 03_model_training.ipynb
+│   ├── 04_model_evaluation.ipynb
+│   ├── 05_hyperparameter_tuning.ipynb
+│   ├── model_metrics_log.csv
+│   └── Artifacts/
+│       ├── random_forest_model.pkl
+│       ├── linear_regression_model.pkl
+│       ├── random_forest_tuned.pkl
+│       └── rf_gridsearch_results.csv
+└── README.md
+```
+
+---
+
+## 📌 Business Insights
+
+- **Shipping delay** and **product category** are strong predictors of sales.
+- Random Forest reveals non-linear relationships that Linear Regression misses.
+- Feature importance highlights which variables most influence sales performance.
+
+---
+
+## 👩‍💻 Tech Stack
+
+- Python, Pandas, scikit-learn, Seaborn, Matplotlib
+- Jupyter Notebooks
+- VS Code, Git, GitHub
+
+---
+
+## 📬 Contact
+
+For questions or collaboration: [nadeli11]
+
