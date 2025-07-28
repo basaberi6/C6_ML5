@@ -158,11 +158,11 @@ Two models built using Random Forest Regressors and included structured feature 
 ### 💡 Business Implications
 Sales performance is most strongly influenced by profit margins, not just discounts. While offering discounts can help, our analysis shows that excessive discounts often reduce profitability without significantly boosting sales. High-margin products like Copiers consistently deliver better sales outcomes. To grow revenue effectively, focus on promoting profitable products, optimizing discount strategies, and understanding customer buying patterns.
 
-Team members:
+## Team members:
 
 Babak S. [basaberi6]
-Divita Narang [divitaN-dev]
+Divita Narang [divitaN-dev] Video: https://www.loom.com/share/1402e4bb1f084e5cbaaa179d16b6c161?sid=a7decfff-5e27-492a-8bca-99706fb2c72b
 Foram Patel [Foram2248]
-Murad Ahmed [MuradAhmed00]
+Murad Ahmed [MuradAhmed00] Video: https://drive.google.com/file/d/1Qzo7YNhP6uxSO0bUqlg0PiFXF7MwUxa6/view?usp=drive_link
 Nastaran Adeli [nadeli11]
 Tala Amiri [Talaamiri]
