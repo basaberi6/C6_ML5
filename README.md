@@ -123,7 +123,7 @@ C6_ML5/
 --------------------------------------------
 ## 🧠 Feature Engineering Summary
 
-After engineering, the dataset includes:
+For the Baseline Model [nadeli11], after engineering, the dataset includes:
 
 - Sales (target)
 - Numerical Features Quantity, Discount, Profit (predictors/ important indicators of order size, pricing strategy, and margin)
@@ -146,7 +146,7 @@ Summary:
 | `Discount`, `Profit`, `Quantity` | Numeric         | Price/margin context for sales              |
 | Categorical dummies              | Binary          | Segment, region, product-level segmentation |
 
-
+For the Best Model, [MuradAhmed00]
 
 ## 📊 Modeling Approach Results
 
