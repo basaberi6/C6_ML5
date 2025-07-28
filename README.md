@@ -3,6 +3,9 @@
 ## 🚀 Project Overview
 
 This project aims to develop a machine learning model that predicts sales performance based on factors such as order date, shipping mode, customer segment, and product category. The model aims to generate actionable insights from a global superstore Sales dataset.
+=======
+
+This project aims to develop a machine learning model that predicts sales performance based on factors such as order date, shipping mode, customer segment, and product category. The model aims to generate actionable insights from a global superstore Sales dataset.
 
 Understanding the key drivers of sales helps businesses make data-informed decisions that improve both efficiency and profitability. By identifying the influential factors on sales performance, the model enables:
 
@@ -184,8 +187,7 @@ Two models built using Random Forest Regressors and included structured feature 
 - The [MuradAhmed00]’s model reveals that **advanced customer and discount analytics** may offer added lift — useful for fine-tuning promotional and pricing strategies.
 - [nadeli11]] remains more **interpretable and operationally lightweight**, making it suitable as a baseline or in resource-constrained deployments.
 
-
----
+=======
 ## Team members
 
 Babak S. [basaberi6]
@@ -194,4 +196,3 @@ Foram Patel [Foram2248]
 Murad Ahmed [MuradAhmed00] Video: https://drive.google.com/file/d/1Qzo7YNhP6uxSO0bUqlg0PiFXF7MwUxa6/view?usp=drive_link
 Nastaran Adeli [nadeli11]
 Tala Amiri [Talaamiri]
-
