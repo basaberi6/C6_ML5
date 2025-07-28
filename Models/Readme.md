@@ -1,6 +1,7 @@
 ## 📦 Models Folder – README
 
 This folder contains the notebooks and assets for training, evaluating, and analyzing machine learning models for predicting sales performance using the Superstore dataset.
+03_model_training.ipynb is based on [nadeli11] model as the baseline and teammate_model.ipynb is based on [MuradAhmed00] that had the best performance.
 
 ---
 
@@ -23,6 +24,8 @@ Train regression models to predict `Sales` using engineered features from the cl
 - Log model metrics to `model_metrics_log.csv`
 
 #### 📤 Output
+
+03_model_training.ipynb baseline model output
 | Model             | R²    | RMSE    | MAE     |
 |------------------|-------|---------|---------|
 | Linear Regression | 0.038 | 753.649 | 199.070 |
