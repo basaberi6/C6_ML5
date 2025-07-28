@@ -180,7 +180,12 @@ Two models built using Random Forest Regressors and included structured feature 
 
 
 ---
-## 📬 Contact
+## Team members
 
-For questions or collaboration: [nadeli11], [basaberi6],[divitaN-dev],[Talaamiri],[MuradAhmed00],[Foram2248]
+Babak S. [basaberi6]
+Divita Narang [divitaN-dev] Video: https://www.loom.com/share/1402e4bb1f084e5cbaaa179d16b6c161?sid=a7decfff-5e27-492a-8bca-99706fb2c72b
+Foram Patel [Foram2248]
+Murad Ahmed [MuradAhmed00] Video: https://drive.google.com/file/d/1Qzo7YNhP6uxSO0bUqlg0PiFXF7MwUxa6/view?usp=drive_link
+Nastaran Adeli [nadeli11]
+Tala Amiri [Talaamiri]
 
