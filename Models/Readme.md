@@ -25,11 +25,12 @@ Train regression models to predict `Sales` using engineered features from the cl
 
 #### 📤 Output
 
-03_model_training.ipynb baseline model output
-| Model             | R²    | RMSE    | MAE     |
-|------------------|-------|---------|---------|
-| Linear Regression | 0.038 | 753.649 | 199.070 |
-| Random Forest     | 0.591 | 491.690 | 85.937  |
+03_model_training.ipynb baseline model output vs. teammate_model.ipynb as the Best model
+
+| Model                             | R² (Test) | RMSE (Test) | MAE (Test) |
+|-----------------------------------|-----------|-------------|------------|
+| **[nadeli11] Baseline Model**     | 0.591     | 491.690     | 85.937     |
+| **[MuradAhmed00] Best Model**     | 0.7828    | 269.45      | 75.16      |
 
 📁 Models saved to: `Models/Artifacts/`  
 📄 Metrics logged to: `Models/model_metrics_log.csv`
@@ -61,17 +62,6 @@ Compare the trained models using diagnostic and error analysis techniques.
 
 ---
 
-### 📁 Folder Structure
-
-Models/
-├── 03_model_training.ipynb
-├── 04_model_evaluation.ipynb
-├── 05_hyperparamet_tuning.ipynb
-├── model_metrics_log.csv
-├── Artifacts/
-│ ├── random_forest_model.pkl
-│ ├── linear_regression_model.pkl
-│ └── top_rf_prediction_errors.csv
 ### 📘 05_hyperparameter_tuning.ipynb
 
 #### 🎯 Goal
@@ -80,17 +70,16 @@ Optimize the Random Forest model using `GridSearchCV` to improve predictive accu
 #### ✅ Key Tasks
 - Load the feature-engineered dataset
 - Use `GridSearchCV` with 5-fold cross-validation
-- Tune hyperparameters:
+- Baseline Model Tune hyperparameters:
   - `n_estimators`: [100, 200]
   - `max_depth`: [None, 10, 20]
   - `min_samples_split`: [2, 5]
   - `min_samples_leaf`: [1, 2]
+- Best Model Tune hyperparameters:
+  - 'model__max_depth': 17
+  - 'model__max_features': 0.7,
+  - 'model__min_samples_leaf': 5,
+  - 'model__n_estimators': 444
+
 - Evaluate the best estimator on the test set
 - Save the optimized model and full tuning results
-
-#### 📊 Visualization
-A heatmap of cross-validated R² scores was generated to show how model performance varies with tree depth and number of estimators.
-
-#### 📤 Output
-- ✅ Best model: `Models/Artifacts/random_forest_tuned.pkl`
-- 📈 GridSearch results: `Models/Artifacts/rf_gridsearch_results.csv`
