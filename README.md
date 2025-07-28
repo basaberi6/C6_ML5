@@ -146,11 +146,16 @@ Summary:
 | `Discount`, `Profit`, `Quantity` | Numeric         | Price/margin context for sales              |
 | Categorical dummies              | Binary          | Segment, region, product-level segmentation |
 
-For the Best Model, [MuradAhmed00]
+
+For the Best Model, [MuradAhmed00], feature engineer was as follow
+   - Smoothed out seasonal swings with sine/cosine date transforms
+   - Tamed large values by applying log and square transforms to quantities
+   - Created business‑centric metrics such as profit per unit, discount‑to‑quantity ratios, and customer/category averages to capture buying habits
+
 
 ## 📊 Modeling Approach Results
 
-✅ Random Forest significantly outperforms Linear Regression.
+✅ For both Baseline Model and Best Model, Random Forest significantly outperforms Linear Regression.
 
 
 ---
