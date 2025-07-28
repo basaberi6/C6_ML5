@@ -1,31 +1,7 @@
-# 🧠 Final Project: Predicting the Determinants of Superstore Sales
+# 📊 Superstore Sales Prediction Project
 
-![Python](https://img.shields.io/badge/python-3.10-blue?logo=python)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-Final--Submission-success)
-![ML Model](https://img.shields.io/badge/model-RandomForest-orange)
+## 🚀 Project Overview
 
-> “Machines are learning — and so are we.” 💻📊
-
----
-## Table of Contents
-- [🛠️ Tech Stack](#️-tech-stack)
-- [Project Objectives](#project-objectives)
-- [Workflow Summary](#workflow_summary)
-- [Feature Engineering Summary](#feature_engineering_summary)
-- [Modeling Approach](#modeling-approach)
-- [Best Model](#best-model)
-- [📊 Best Model Results Snapshot](#📊-best-model-results-snapshot)
-- [Business Value](#business-value)
-- [Key Takeaways](#key-takeaways)
-
-## 🛠️ Tech Stack
-- 🐍 Python 3.12  
-- 📊 Pandas, NumPy, Matplotlib  
-- 🤖 Scikit‑learn, XGBoost, LightGBM, RandomForestRegressor  
-- 📂 Jupyter Notebook  
-
-## Project Objectives
 This project aims to develop a machine learning model that predicts sales performance based on factors such as order date, shipping mode, customer segment, and product category. The model aims to generate actionable insights from a global superstore Sales dataset.
 
 Understanding the key drivers of sales helps businesses make data-informed decisions that improve both efficiency and profitability. By identifying the influential factors on sales performance, the model enables:
@@ -38,15 +14,13 @@ Evaluate the impact of shipping modes and timelines on sales to improve logistic
 
 c.	 Product and Category Insights
 Understand which product categories drive sales, enabling better assortment planning and promotional focus.
-## Data Preparation & Feature Engineering
-- Smoothed out seasonal swings with sine/cosine date transforms  
-- Tamed large values by applying log and square transforms to quantities  
-- Created business‑centric metrics such as profit per unit, discount‑to‑quantity ratios, and customer/category averages to capture buying habits  
 
-### Key Business Takeaway From This Modeling Project for Sales Strategy
+## 🧭 Key Business Takeaway From This Modeling Project for Sales Strategy
 Sales performance is most strongly influenced by profit margins, not just discounts. While offering discounts can help, our analysis shows that excessive discounts often reduce profitability without significantly boosting sales. High-margin products like Copiers consistently deliver better sales outcomes. To grow revenue effectively, focus on promoting profitable products, optimizing discount strategies, and understanding customer buying patterns.
 
-## Superstore Sales Dataset
+
+## 📊 Superstore Sales
+
 Superstore dataset containing Information related to Sales, Profits and other interesting facts of a Superstore giant from 2015 to 2019.
 https://www.kaggle.com/datasets/vivek468/superstore-dataset-final?resource=download
 
@@ -71,29 +45,72 @@ https://www.kaggle.com/datasets/vivek468/superstore-dataset-final?resource=downl
 | Product_Name   | string  | 1849 distinct values     |
 | Sales          | numeric | 5757 distinct values     |
 
-## Workflow Summary
+---
+
+## 📁 Repository Structure
+
+```
+C6_ML5/
+├── Data/
+│   ├── Raw/
+│   │   └── Sample_Superstore.csv
+│   └── Processed/
+│       ├── feature_engineered_superstore.csv
+|       ├── cleaned_superstore.ipynb
+|.      └──data_review.ipynb  
+├── Models/
+│   ├── 03_model_training.ipynb
+│   ├── 04_model_evaluation.ipynb
+│   ├── 05_hyperparameter_tuning.ipynb
+│   ├── model_metrics_log.csv
+│   └── Artifacts/
+│       ├── random_forest_model.pkl
+│       ├── linear_regression_model.pkl
+│       ├── random_forest_tuned.pkl
+│       └── rf_gridsearch_results.csv
+├── Experiments/
+|   ├── 06_model_comparison.ipynb
+|   └── teammate_model.ipynb
+└── README.md
+```
+---
+## 👩‍💻 Tech Stack
+
+- Python, Pandas, scikit-learn, Seaborn, Matplotlib
+- Jupyter Notebooks
+- VS Code, Git, GitHub
+
+---
+
+## 🔁 Workflow Summary
+
 1. **Data Cleaning and Exploratory Data Analysis (EDA)**
    - Load dataset from: `Data/Raw/Sample_Superstore.csv`
    - Check for and removed missing or inconsistent data
    - Explore key distributions (Sales, Profit, Discount, etc.)
    - Visualize how Discount relates to Sales & Profit
    - Compare average Sales and Profit across Sub-Categories
+
 2. **Feature Engineering**
    - Converted date columns
    - Extracted date-based features (year, month, day)
    - Calculated shipping delay
    - One-hot encoded categorical variables
+
 3. **Model Training**
    - Trained and compared:
      - Linear Regression
      - Random Forest Regressor
    - Evaluated with R², RMSE, MAE
+
 4. **Model Evaluation**
    - Visualized residuals, actual vs predicted, and Q-Q plots
    - Exported top model errors for review
+
 5. **Hyperparameter Tuning**
    - Applied `GridSearchCV` to fine-tune Random Forest
    - Best model saved to: `Models/Artifacts/random_forest_tuned.pkl`
+
 6. **Comparison of two models from teammates**
    - Comparing performance Metrics of two models: R² Score , RMSE,  Adjusted R²,  MAPE / SMAPE  
    - Summary table of both model's results: training and test scores are displayed side by side for easy comparison.
@@ -103,9 +120,10 @@ https://www.kaggle.com/datasets/vivek468/superstore-dataset-final?resource=downl
       - Scatter plots of actual vs. predicted sales for each model to visually assess how close predictions are to reality.
       - Top Feature Drivers: Extracts and displays the most important predictive features for each model to identify any shifts in model behavior.
 
-## Feature Engineering Summary
+--------------------------------------------
+## 🧠 Feature Engineering Summary
 
-After engineering, the dataset includes:
+For the Baseline Model [nadeli11], after engineering, the dataset includes:
 
 - Sales (target)
 - Numerical Features Quantity, Discount, Profit (predictors/ important indicators of order size, pricing strategy, and margin)
@@ -126,18 +144,27 @@ Summary:
 | `Order_Weekday`                  | Ordinal         | Temporal buying patterns                    |
 | `Order_Year/Month`               | Categorical-ish | Seasonality / yearly trends                 |
 | `Discount`, `Profit`, `Quantity` | Numeric         | Price/margin context for sales              |
-| Categorical dummies              | Binary          | Segment, region, product-level segmentation |      
+| Categorical dummies              | Binary          | Segment, region, product-level segmentation |
 
-## Modeling Approach
-- **Linear Regression & Ridge Regression**: Established baseline performance  
-- **Random Forest & Gradient Boosting**: Captured non‑linear interactions
-- **Random Forest significantly outperforms Linear Regression.
-  
 
-## Best Model
+For the Best Model, [MuradAhmed00], feature engineer was as follow
+   - Smoothed out seasonal swings with sine/cosine date transforms
+   - Tamed large values by applying log and square transforms to quantities
+   - Created business‑centric metrics such as profit per unit, discount‑to‑quantity ratios, and customer/category averages to capture buying habits
+
+
+## 📊 Modeling Approach Results
+
+✅ For both Baseline Model and Best Model, Random Forest significantly outperforms Linear Regression.
+
+
+---
+
+## 🔍 Comparison of two different models & insights
+
 Two models built using Random Forest Regressors and included structured feature engineering and hyperparameter tuning were compared. With the same modeling approach, the key distinction lies in the **depth of feature construction**.
 
-## 📊 Best Model Results Snapshot
+### 📊 Performance Summary
 
 | Model                    | R² (Test) | RMSE (Test) | MAE (Test) |
 |------------------------- |-----------|-------------|------------|
@@ -151,14 +178,15 @@ Two models built using Random Forest Regressors and included structured feature 
 ### 📈 Interpretation
 - The [MuradAhmed00]’s model achieved **higher predictive accuracy**, reflected by a 32% gain in R² and a lower RMSE on test data.
 - [nadeli11] model showed solid performance and interpretable results, particularly highlighting `Profit` as the dominant predictor of `Sales`.
+
+### 💡 Business Implications
 - **Profit consistently drives sales** across both models, validating a strategy that focuses on maintaining high-margin product lines.
 - The [MuradAhmed00]’s model reveals that **advanced customer and discount analytics** may offer added lift — useful for fine-tuning promotional and pricing strategies.
 - [nadeli11]] remains more **interpretable and operationally lightweight**, making it suitable as a baseline or in resource-constrained deployments.
 
-### 💡 Business Implications
-Sales performance is most strongly influenced by profit margins, not just discounts. While offering discounts can help, our analysis shows that excessive discounts often reduce profitability without significantly boosting sales. High-margin products like Copiers consistently deliver better sales outcomes. To grow revenue effectively, focus on promoting profitable products, optimizing discount strategies, and understanding customer buying patterns.
 
-## Team members:
+---
+## Team members
 
 Babak S. [basaberi6]
 Divita Narang [divitaN-dev] Video: https://www.loom.com/share/1402e4bb1f084e5cbaaa179d16b6c161?sid=a7decfff-5e27-492a-8bca-99706fb2c72b
