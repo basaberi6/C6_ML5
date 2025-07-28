@@ -69,7 +69,8 @@ C6_ML5/
 │       ├── random_forest_tuned.pkl
 │       └── rf_gridsearch_results.csv
 ├── Experiments/
-|   └── 06_model_comparison.ipynb
+|   ├── 06_model_comparison.ipynb
+|   └── teammate_model.ipynb
 └── README.md
 ```
 ---
