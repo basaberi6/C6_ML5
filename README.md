@@ -19,7 +19,6 @@ Industries That Can Benefit
 •	Logistics & Fulfillment Providers: Align shipping methods with customer expectations and sales performance.
 •	Marketing & BI Consulting Firms: Deliver more targeted, data-driven client strategies.
 
-
 ## 🚀 Project Overview
 
 This project applied machine learning to identify the key drivers of sales performance for a global retail superstore. Based on sug-catgories of soled product, this superstore is in the market of office supplies with the main product being copiers. 
@@ -232,4 +231,3 @@ Two models built using Random Forest Regressors and included structured feature 
     Nastaran Adeli [nadeli11] 
     
     Tala Amiri [Talaamiri] https://drive.google.com/file/d/1hSLFhGQFMyXxfDGa6aQ3itX59UkVD2s3/view?usp=drive_link 
-    
