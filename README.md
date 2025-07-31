@@ -230,4 +230,4 @@ Two models built using Random Forest Regressors and included structured feature 
     
     Nastaran Adeli-Rankoohi [nadeli11] 
     
-    Tala Amiri [Talaamiri] https://drive.google.com/file/d/1hSLFhGQFMyXxfDGa6aQ3itX59UkVD2s3/view?usp=drive_link 
+    Tala Amirilarijani [Talaamiri] https://drive.google.com/file/d/1hSLFhGQFMyXxfDGa6aQ3itX59UkVD2s3/view?usp=drive_link 
