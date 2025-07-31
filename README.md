@@ -228,6 +228,6 @@ Two models built using Random Forest Regressors and included structured feature 
     
     Murad Ahmed [MuradAhmed00] Video: https://drive.google.com/file/d/1Qzo7YNhP6uxSO0bUqlg0PiFXF7MwUxa6/view?usp=drive_link
     
-    Nastaran Adeli [nadeli11] 
+    Nastaran Adeli-Rankoohi [nadeli11] 
     
     Tala Amiri [Talaamiri] https://drive.google.com/file/d/1hSLFhGQFMyXxfDGa6aQ3itX59UkVD2s3/view?usp=drive_link 
