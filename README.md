@@ -25,7 +25,7 @@ This project applied machine learning to identify the key drivers of sales perfo
 The model was trained on a four-year dataset containing over 9,000 transactions, with fields capturing order timing, shipping mode, customer segment, geography, product categories, discount levels, sales revenue, and profit.
 A Random Forest regression model was trained and fine-tuned to predict sales. The best model achieved an R² score of 0.79 on test/validation data, demonstrating its ability to capture complex relationships within the data.
 
-===================
+====
 ## 🧭 Key Business Takeaway From This Modeling Project for Sales Strategy
 Sales performance is most strongly influenced by profit margins, not just discounts. While offering discounts can help, our analysis shows that excessive discounts often reduce profitability without significantly boosting sales. High-margin products like Copiers consistently deliver better sales outcomes. To grow revenue effectively, focus on promoting profitable products, optimizing discount strategies, and understanding customer buying patterns.
 
@@ -37,7 +37,7 @@ These insights were not merely the result of data visualization but were derived
 trained machine learning model that assigned quantitative weight to each predictor. This approach provided data-driven clarity on what really drives sales and equips the
 business with actionable priorities for pricing, product management, and promotional focus.
 
-=====================
+====
 Model Limitations and Next Steps for Further Analysis
 
 It is important to know the business and accounting context behind data collections or any calculations applied in the raw data. 
@@ -49,7 +49,7 @@ Providing the ability to integrate this model with updated financial and account
 
 To further improve the accuracy and business value of the sales prediction model, future analysis could explore how performance varies across different customer segments or product categories, allowing for more targeted strategies. Incorporating time-based patterns such as seasonality or quarterly trendscan help the model adjust to predictable sales cycles. Advanced techniques like Gradient Boosting or XGBoost may also enhance predictive performance by capturing more complex relationships in the data. Additionally, simplifying the model by removing less important features based after the results of initial modelling may also reduce overfitting and improve generalization power of the model.
 
-======================
+====
 
 ## 📊 Superstore Sales Dataset
 
@@ -151,7 +151,8 @@ C6_ML5/
       - Scatter plots of actual vs. predicted sales for each model to visually assess how close predictions are to reality.
       - Top Feature Drivers: Extracts and displays the most important predictive features for each model to identify any shifts in model behavior.
 
---------------------------------------------
+====
+
 ## 🧠 Feature Engineering Summary
 
 For the Baseline Model [nadeli11], after engineering, the dataset includes:
@@ -183,13 +184,13 @@ For the Best Model, [MuradAhmed00], feature engineer was as follow
    - Tamed large values by applying log and square transforms to quantities
    - Created business‑centric metrics such as profit per unit, discount‑to‑quantity ratios, and customer/category averages to capture buying habits
 
+===
 
 ## 📊 Modeling Approach Results
 
 ✅ For both Baseline Model and Best Model, Random Forest significantly outperforms Linear Regression.
 
-
----
+===
 
 ## 🔍 Comparison of two different models & insights
 
@@ -215,7 +216,7 @@ Two models built using Random Forest Regressors and included structured feature 
 - The [MuradAhmed00]’s model reveals that **advanced customer and discount analytics** may offer added lift — useful for fine-tuning promotional and pricing strategies.
 - [nadeli11]] remains more **interpretable and operationally lightweight**, making it suitable as a baseline or in resource-constrained deployments.
 
-=======
+===
 ## Our Team Approach
 After selecting the project topic and dataset a main repository with agreed on structure was created. Since we all wanted to have an end-to-end exercise of all steps in the workflow, team decided that each member works on their own branch. After that we reviewed and discussed the results of each teammate's model. We selected one model, its feature engineering and hyperparameter tuning parameter as a baseline model and we added the best teammate's model with highest R^2 as an experiment to compare the results side by side. With this parameter tuning on improving a model performance. The interpretation of findings and key takeaway for business strategy are based on the results of the best performing model.
 
