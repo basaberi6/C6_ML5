@@ -21,7 +21,7 @@ Industries That Can Benefit
 
 ## 🚀 Project Overview
 
-This project applied machine learning to identify the key drivers of sales performance for a global retail superstore. Based on sug-catgories of soled product, this superstore is in the market of office supplies with the main product being copiers. 
+This project applied machine learning to identify the key drivers of sales performance for a global retail superstore. Based on sub-categories of sold product, this superstore is in the market of office supplies with the main product being copiers. 
 The model was trained on a four-year dataset containing over 9,000 transactions, with fields capturing order timing, shipping mode, customer segment, geography, product categories, discount levels, sales revenue, and profit.
 A Random Forest regression model was trained and fine-tuned to predict sales. The best model achieved an R² score of 0.79 on test/validation data, demonstrating its ability to capture complex relationships within the data.
 
@@ -30,24 +30,24 @@ A Random Forest regression model was trained and fine-tuned to predict sales. Th
 Sales performance is most strongly influenced by profit margins, not just discounts. While offering discounts can help, our analysis shows that excessive discounts often reduce profitability without significantly boosting sales. High-margin products like Copiers consistently deliver better sales outcomes. To grow revenue effectively, focus on promoting profitable products, optimizing discount strategies, and understanding customer buying patterns.
 
 The most important finding based on the best model results, is that that profit alone explained over 67% of the model’s predictive power, making it by far the dominant driver of sales. While this might sound intuitive, the quantitative confirmation supports a strategy focused on high-margin products. Copiers, for instance, emerged as the strongest performer in both revenue and profit, while categories like Tables, Bookcases, and Supplies had consistently negative margins despite reasonable sales volumes.
-Discount, by contrast, contributed only ~1.5% to the model's predictions, and the data showed that sales were actually highest when no discount was applied. This challenges the widely held belief that deeper discounts are a reliable lever for increasing sales and suggests that discounting strategies may be eroding margin without delivering returns.
-Results of another another models has also showed that shipping mode has minimal impact on sale. Although Standard Class had the longest order-to- ship time, sales levels remained comparable across fulfillment options — suggesting customers are tolerant of slower shipping when expectations are clear.
+Discount, by contrast, contributed only ~1.5% to the model's predictions, and the data showed that sales were highest when no discount was applied. This challenges the widely held belief that deeper discounts are a reliable lever for increasing sales and suggests that discounting strategies may be eroding margin without delivering returns.
+Results of another model has also showed that shipping mode has minimal impact on sale. Although Standard Class had the longest order-to-ship time, sales levels remained comparable across fulfillment options — suggesting customers are tolerant of slower shipping when expectations are clear.
 
 These insights were not merely the result of data visualization but were derived from a
 trained machine learning model that assigned quantitative weight to each predictor. This approach provided data-driven clarity on what really drives sales and equips the
 business with actionable priorities for pricing, product management, and promotional focus.
 
 =====================
-Model Limitations and ext Steps for analysis
+Model Limitations and Next Steps for Further Analysis
 
 It is important to know the business and accounting context behind data collections or any calculations applied in the raw data. 
 Having business and accounting context behind how data are collected, or features are calculated is important for capturing nuances of how features can influence each other or trusting the generalized predictions of model for crafting a sound business strategy. 
-For example, 'Profit data as provided in the raw dataset is actually a calculated feature of its own.  We do not know if calculation of the profit is simply based on sold price minus cost of goods sold or it has included operational or inventory costs. Adding operational costs or inventory costs of goods may change the importance of Discount feature.
+For example, 'Profit data as provided in the raw dataset is a calculated feature of its own.  We do not know if calculation of the profit is simply based on sold price minus cost of goods sold or it has included operational or inventory costs. Adding operational costs or inventory costs of goods may change the importance of Discount feature.
 
 Additionally integrating external data sources such as marketing activity, competitor pricing, or economic indicators model can help with the model reflating real-world influences on sales. 
-Providing the ability to integrate this model with updated financial and accounting data and retraining model based on updated data from time to time can also help model to capture the possibility of the change in overall business environment, customers demands or expectation (for example impact of COVID pandemic in 2020).
+Providing the ability to integrate this model with updated financial and accounting data and retraining model based on updated data from time to time can also help model to capture the possibility of the change in overall business environment, customers' demands or expectation (for example impact of COVID pandemic in 2020).
 
-To further improve the accuracy and business value of the sales prediction model, future analysis could explore how performance varies across different customer segments or product categories, allowing for more targeted strategies. Incorporating time-based patterns such as seasonality or quarterly trendscan help the model adjust to predictable sales cycles. Advanced techniques like Gradient Boosting or XGBoost may also enhance predictive performance by capturing more complex relationships in the data. Additionally, simplifying the model by removing less important features based after the results of initial modelling cmay also reduce overfitting and improve the power generalizition.
+To further improve the accuracy and business value of the sales prediction model, future analysis could explore how performance varies across different customer segments or product categories, allowing for more targeted strategies. Incorporating time-based patterns such as seasonality or quarterly trendscan help the model adjust to predictable sales cycles. Advanced techniques like Gradient Boosting or XGBoost may also enhance predictive performance by capturing more complex relationships in the data. Additionally, simplifying the model by removing less important features based after the results of initial modelling may also reduce overfitting and improve generalization power of the model.
 
 ======================
 
