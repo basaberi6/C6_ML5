@@ -101,7 +101,6 @@ C6_ML5/
 │       ├── random_forest_tuned.pkl
 │       └── rf_gridsearch_results.csv
 ├── Experiments/
-|   ├── 06_model_comparison.ipynb
 |   └── teammate_model.ipynb
 └── README.md
 ```
@@ -217,6 +216,9 @@ Two models built using Random Forest Regressors and included structured feature 
 - [nadeli11]] remains more **interpretable and operationally lightweight**, making it suitable as a baseline or in resource-constrained deployments.
 
 =======
+## Our Team Approach
+After selecting the project topic and dataset a main repository with agreed on structure was created. Since we all wanted to have an end-to-end exercise of all steps in the workflow, team decided that each member works on their own branch. After that we reviewed and discussed the results of each teammate's model. We selected one model, its feature engineering and hyperparameter tuning parameter as a baseline model and we added the best teammate's model with highest R^2 as an experiment to compare the results side by side. With this parameter tuning on improving a model performance. The interpretation of findings and key takeaway for business strategy are based on the results of the best performing model.
+
 ## Team members
 
 
