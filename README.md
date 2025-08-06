@@ -231,6 +231,6 @@ After selecting the project topic and dataset a main repository with agreed on s
     
     Murad Ahmed [MuradAhmed00] Video: https://drive.google.com/file/d/1Qzo7YNhP6uxSO0bUqlg0PiFXF7MwUxa6/view?usp=drive_link
     
-    Nastaran Adeli-Rankoohi [nadeli11] 
+    Nastaran Adeli-Rankoohi [nadeli11] Video: https://youtu.be/LrwFs2vVyh8
     
     Tala Amirilarijani [Talaamiri] https://drive.google.com/file/d/1hSLFhGQFMyXxfDGa6aQ3itX59UkVD2s3/view?usp=drive_link 
